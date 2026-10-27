@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.prod
+dist/
+build/
+coverage/
+*.log
+*.tsbuildinfo
+src/infrastructure/database/drizzle/schema.ts
+keys_security/*.*
+docs
+templates/postgres/*.*
+src/infrastructure/database/drizzle/schema.ts
+src/infrastructure/database/drizzle/migrations

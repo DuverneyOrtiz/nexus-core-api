@@ -1,0 +1,72 @@
+export default [
+  {
+    "id": 1,
+    "codigo": "P001",
+    "nombre": "Arroz Diana 500g",
+    "descripcion": "Arroz blanco premium",
+    "precio_compra": 1800,
+    "precio_venta": 2500,
+    "stock": 120,
+    "categoria": "Granos",
+    "marca": "Diana",
+    "unidad_medida": "UND",
+    "estado": true,
+    "fecha_creacion": "2026-06-15T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "codigo": "P002",
+    "nombre": "Aceite Premier 900ml",
+    "descripcion": "Aceite vegetal comestible",
+    "precio_compra": 8500,
+    "precio_venta": 10500,
+    "stock": 50,
+    "categoria": "Aceites",
+    "marca": "Premier",
+    "unidad_medida": "UND",
+    "estado": true,
+    "fecha_creacion": "2026-06-15T10:05:00Z"
+  },
+  {
+    "id": 3,
+    "codigo": "P003",
+    "nombre": "Azúcar Manuelita 1Kg",
+    "descripcion": "Azúcar refinada",
+    "precio_compra": 3200,
+    "precio_venta": 4000,
+    "stock": 80,
+    "categoria": "Endulzantes",
+    "marca": "Manuelita",
+    "unidad_medida": "UND",
+    "estado": true,
+    "fecha_creacion": "2026-06-15T10:10:00Z"
+  },
+  {
+    "id": 4,
+    "codigo": "P004",
+    "nombre": "Leche Alquería 1L",
+    "descripcion": "Leche entera larga vida",
+    "precio_compra": 3800,
+    "precio_venta": 4500,
+    "stock": 35,
+    "categoria": "Lácteos",
+    "marca": "Alquería",
+    "unidad_medida": "UND",
+    "estado": true,
+    "fecha_creacion": "2026-06-15T10:15:00Z"
+  },
+  {
+    "id": 5,
+    "codigo": "P005",
+    "nombre": "Coca-Cola 1.5L",
+    "descripcion": "Bebida gaseosa",
+    "precio_compra": 4800,
+    "precio_venta": 6500,
+    "stock": 60,
+    "categoria": "Bebidas",
+    "marca": "Coca-Cola",
+    "unidad_medida": "UND",
+    "estado": true,
+    "fecha_creacion": "2026-06-15T10:20:00Z"
+  }
+]

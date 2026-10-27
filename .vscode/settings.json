@@ -1,0 +1,51 @@
+{
+  "todotree.general.tags": [
+    "BUG",
+    "FIXME",
+    "TODO",
+    "HACK",
+    "WARN",
+    "WARNING",
+    "NOTE",
+    "OPTIMIZE",
+    "PERF",
+    "DONE"
+  ],
+  "todotree.highlights.customHighlight": {
+    "BUG|FIXME": {
+      "foreground": "#FFFFFF",
+      "background": "#E05263",
+      "icon": "bug"
+    },
+    "TODO": {
+      "foreground": "#FFFFFF",
+      "background": "#4C9AFF",
+      "icon": "check"
+    },
+    "HACK": {
+      "foreground": "#1F2933",
+      "background": "#F5A623",
+      "icon": "flame"
+    },
+    "WARN|WARNING": {
+      "foreground": "#1F2933",
+      "background": "#E6B800",
+      "icon": "alert"
+    },
+    "NOTE": {
+      "foreground": "#FFFFFF",
+      "background": "#43A047",
+      "icon": "note"
+    },
+    "OPTIMIZE|PERF": {
+      "foreground": "#FFFFFF",
+      "background": "#8E6CEF",
+      "icon": "rocket"
+    },
+    "DONE": {
+      "foreground": "#FFFFFF",
+      "background": "#8A949E",
+      "icon": "check"
+    }
+  }
+}
