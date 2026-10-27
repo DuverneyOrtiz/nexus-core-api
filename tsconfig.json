@@ -4,8 +4,6 @@
     "module": "ES2022",
     "moduleResolution": "Bundler",
     "types": ["node"],
-    "ignoreDeprecations": "6.0",
-    "baseUrl": ".",
     "rootDir": "src",
     "outDir": "dist",
     "paths": {

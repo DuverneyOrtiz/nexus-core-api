@@ -327,16 +327,13 @@ nexus-core-node/
 │   │   ├── middlewares/         # Middlewares globales (autenticación JWT, guards, etc.)
 │   │   └── utils/               # Utilidades de hashing, seguridad RSA, respuestas y Brevo
 │   ├── scripts/                 # Scripts CLI interactivos para configuración y seeding
-│   │   ├── cli.ts               # Asistente de configuración de esquema y base de datos
+│   │   ├── cli.ts               # Asistente de configuración de variables de entorno (.env) y base de datos
 │   │   └── initDatabase.ts      # Seeder maestro para datos iniciales
 │   ├── app.ts                   # Configuración y middlewares de la aplicación Express
 │   └── server.ts                # Entrada principal y arranque del servidor HTTP
 ├── keys_security/               # Llaves RSA y certificados PEM (ignorado por git)
 │   ├── private_key.pem          # Clave privada para firma de tokens JWT (RS256)
 │   └── public_certificate.pem   # Certificado público para verificación de tokens
-├── templates/                   # Plantillas predefinidas por modelo y motor
-│   ├── mysql/                   # Plantillas de esquema (b2b, b2c, trial, etc.) y env para MySQL
-│   └── postgres/                # Plantillas de esquema y env para PostgreSQL
 ├── drizzle.config.ts            # Configuración dinámica de Drizzle Kit
 ├── tsconfig.json                # Configuración de compilación de TypeScript y path aliases
 └── package.json                 # Metadatos, scripts y dependencias
@@ -353,7 +350,7 @@ Puedes ejecutar cualquiera de estos scripts mediante `bun <comando>` o `bun run 
 | `bun dev` | Inicia el servidor en modo desarrollo con observación de cambios en tiempo real vía `tsx`. |
 | `bun build` | Compila el código TypeScript a JavaScript en la carpeta `dist/` resolviendo alias de rutas. |
 | `bun start` | Ejecuta la versión compilada en producción (`dist/server.js`). |
-| `bun setting` | Ejecuta el asistente interactivo para elegir modelo de negocio, base de datos y generar `.env`. |
+| `bun setting` | Ejecuta el asistente interactivo para configurar el motor de base de datos y generar `.env`. |
 | `bun migrate` | Genera los archivos SQL de migración y los aplica en la base de datos con Drizzle Kit. |
 | `bun settingDb` | Asistente interactivo para sembrar la compañía inicial, superadministrador, cuenta y permisos. |
 | `bun casbin` | Crea la tabla `casbin_rule` si no existe y carga las reglas RBAC base de autorización. |

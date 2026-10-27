@@ -17,19 +17,6 @@ const casbi_rules = async () => {
     table: casbinRuleMysql,
   });
 
-  // Create the casbin_rule table if it doesn't exist
-  await db.execute(sql`
-        CREATE TABLE IF NOT EXISTS casbin_rule (
-            id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-            ptype VARCHAR(255),
-            v0 VARCHAR(255),
-            v1 VARCHAR(255),
-            v2 VARCHAR(255),
-            v3 VARCHAR(255),
-            v4 VARCHAR(255),
-            v5 VARCHAR(255)
-        )
-        `);
 
   const e = await newEnforcer(path.resolve(__dirname, "basic_model.conf"), a);
 
